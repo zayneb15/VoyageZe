@@ -4,19 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
-    <nav>
-        <i class='bxr  bx-plane-alt'  ></i>  
-        <h1>TravelZen</h1>
-        <ul>
-            <li><a href="./travel_recommendation.html" id="home">Home</a></li>
-            <li><a href="./aboutUs" id="about"> About Us</a></li>
-            <li><a href="./contactUs" id="contact">Contact Us</a></li>
-            <li><input type="text" id="searchV" placeholder="enter a destination or keywords"></li>
-            <li><button id="btnSearch">Search</button></li>
-            <li><button id="clear">Clear</button></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <h1 class="h">TravelZen</h1>
+            <ul class="navbar">
+                <div class="de">
+                <li><a href="#home" id="home" class="a">Home</a></li>
+                <li><a href="#about" id="about"> About Us</a></li>
+                <li><a href="#contact" id="contact">Contact Us</a></li>
+                </div>
+                <div class="dee">
+                    <li><input type="text" id="searchV" placeholder="enter a destination or keywords"></li>
+                <li><button id="btnSearch">Search</button></li>
+                <li><button id="clear">Clear</button></li>
+                </div>
+                
+            </ul>
+        </nav>
+    </header>
+   <!--Home--> 
+   <section class="hero" id="home">
+    <div class="hero-content">
+        <h1>EXPLORE<br><span>DREAM</span><br>DESTINATION</h1>
+        <p>Discover the most breathtaking places around the world with TravelZen. We help you plan your perfect getaway, whether you're looking for adventure, relaxation, or cultural experiences. Start your journey today!</p>
+        <a href="#about" class="cta-button">Get Started</a>
+    </div>
+
+    <div class="social-icons">
+        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <a href="#"><i class='bx bxl-instagram' ></i></a>
+        <a href="#"><i class='bx bxl-pinterest' ></i></a>
+    </div>
+</section>
+<section class="about-section" id="about">
+    <h2>ABOUT US</h2>
+    <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent service for our customers. Our mission is to provide the best experience for people traveling through generations around the world.</p>
+    <p>Our values include integrity, innovation, customer satisfaction and teamwork. We believe in putting our customers first, working together to achieve our goals. Feel free to explore our website to learn more about what we offer!</p>
+</section>
+
+<section class="team-section">
+    <h2>OUR TEAM</h2>
+    <div class="team-grid">
+        <div class="team-member">
+            <div class="member-info">
+                <h3>John Don</h3>
+                <p class="position">CEO</p>
+                <p class="description">Founder of TravelZen with over 15 years of experience in the travel industry. A visionary leader responsible for company strategy.</p>
+            </div>
+        </div>
+        
+        <div class="team-member">
+            <div class="member-info">
+                <h3>Carlos Thomas</h3>
+                <p class="position">Team Lead</p>
+                <p class="description">Expert in customer relations and service excellence. Leads our team of travel consultants with passion and dedication.</p>
+            </div>
+        </div>
+        
+        <div class="team-member">
+            <div class="member-info">
+                <h3>Mike Ryan</h3>
+                <p class="position">Delivery Head</p>
+                <p class="description">Ensures all our travel packages and services meet the highest standards of quality and customer satisfaction.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-section" id="contact">
+    <h2>GET IN TOUCH</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info-text">
+                    <h4>Address</h4>
+                    <p>123 Travel Street, Adventure City, 12345</p>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <div class="info-text">
+                    <h4>Phone</h4>
+                    <p><a href="tel:+1234567890">+1 (216) 53904211</a></p>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div class="info-text">
+                    <h4>Email</h4>
+                    <p><a href="mailto:info@travelzen.com">info@travelzen.com</a></p>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <div class="info-text">
+                    <h4>Working Hours</h4>
+                    <p>Monday - Friday: 9:00 - 18:00</p>
+                    <p>Saturday: 10:00 - 15:00</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+<div id="results" style="padding: 2rem;"></div>
+<script src="travel_recommendation.js"></script>
 </body>
 </html>
